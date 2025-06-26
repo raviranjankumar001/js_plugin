@@ -8,10 +8,13 @@ A simple JavaScript-based lightbox plugin that displays images in a popup view w
 ## 📁 Folder Structure
 
 ```bash
-lightbox/
-├── app.js         # Plugin JavaScript file
-├── style.css      # Styles required for the plugin
-└── imageslogo/    # Icons used inside the popup (back.png, next.png, cancel.png)
+
+├── imageslogo/ # Required icons (back, next, cancel)
+│ ├── back.png
+│ ├── next.png
+│ └── cancel.png
+├── style.css # Styles for the lightbox popup
+└── app.js # JavaScript plugin logic
 
 ```
 🚀 Features
@@ -71,6 +74,16 @@ Include CSS and JS in Your HTML File
   imagePopupInit('pop');
 </script>
 ```
+
+
+⚠️ Don't Forget
+✅ Include the entire imageslogo folder, which contains necessary icons (back.png, next.png, cancel.png).
+
+❌ The plugin will not work correctly if any of these icon images are missing or renamed.
+
+✅ Make sure all images you want to use the popup on have the same class name (like pop).
+
+
 
 
 📌 Notes
